@@ -21,11 +21,11 @@ func zxAutoScrollView(_ scrollView: ZXAutoScrollView, pageAt index: Int) -> UIVi
 }
 ```
 
-##Delegate
+## Delegate
 
 ```
 func zxAutoScrolView(_ scrollView: ZXAutoScrollView, selectAt index: Int) {
-	print(index)
+    print(index)
 }
 ```
 
@@ -34,11 +34,12 @@ func zxAutoScrolView(_ scrollView: ZXAutoScrollView, selectAt index: Int) {
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-|DEMO|
-|----|
-|![DEMO](https://github.com/iFallen/ZXAutoScrollView/raw/master/ScreenShot/Demo.gif)|
+>
+![DEMO](https://github.com/iFallen/ZXAutoScrollView/raw/master/ScreenShot/Demo.gif)
 
 ## Requirements
+
+iOS8 or Later
 
 ## Installation
 
@@ -51,7 +52,7 @@ pod 'ZXAutoScrollView'
 
 ## Author
 
-iFallen, hulj1204@yahoo.com
+JuanFelix, <hulj1204@yahoo.com>
 
 ## License
 
