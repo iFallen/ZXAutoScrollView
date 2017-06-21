@@ -1,0 +1,22 @@
+{
+  "name": "ZXAutoScrollView",
+  "version": "0.1.0",
+  "summary": "A short description of ZXAutoScrollView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/iFallen/ZXAutoScrollView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "iFallen": "hulj1204@yahoo.com"
+  },
+  "source": {
+    "git": "https://github.com/iFallen/ZXAutoScrollView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ZXAutoScrollView/Classes/**/*"
+}

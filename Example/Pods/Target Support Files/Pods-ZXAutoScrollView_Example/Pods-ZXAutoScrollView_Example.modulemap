@@ -1,0 +1,6 @@
+framework module Pods_ZXAutoScrollView_Example {
+  umbrella header "Pods-ZXAutoScrollView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

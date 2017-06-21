@@ -1,0 +1,16 @@
+PODS:
+  - ZXAutoScrollView (0.1.0)
+
+DEPENDENCIES:
+  - ZXAutoScrollView (from `../`)
+
+EXTERNAL SOURCES:
+  ZXAutoScrollView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZXAutoScrollView: 3e1422818cf95ca561da7040bc4b1e1a06cabaff
+
+PODFILE CHECKSUM: dfaab2ffefd11ac354b97900994c6468e9e71d4a
+
+COCOAPODS: 1.2.1
