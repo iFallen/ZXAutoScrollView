@@ -5,9 +5,38 @@
 [![License](https://img.shields.io/cocoapods/l/ZXAutoScrollView.svg?style=flat)](http://cocoapods.org/pods/ZXAutoScrollView)
 [![Platform](https://img.shields.io/cocoapods/p/ZXAutoScrollView.svg?style=flat)](http://cocoapods.org/pods/ZXAutoScrollView)
 
+## DataSource
+
+```
+func numberofPages(_ inScrollView: ZXAutoScrollView) -> Int {
+    return dataCount
+}
+    
+func zxAutoScrollView(_ scrollView: ZXAutoScrollView, pageAt index: Int) -> UIView {
+    let view = UILabel()
+    view.font = UIFont.boldSystemFont(ofSize: 20)    
+    view.textColor = UIColor.white
+    view.text = "\(index + 1)"
+    return view
+}
+```
+
+##Delegate
+
+```
+func zxAutoScrolView(_ scrollView: ZXAutoScrollView, selectAt index: Int) {
+	print(index)
+}
+```
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+|DEMO|
+|----|
+|![DEMO](https://github.com/iFallen/ZXAutoScrollView/raw/master/ScreenShot/Demo.gif)|
 
 ## Requirements
 
@@ -17,7 +46,7 @@ ZXAutoScrollView is available through [CocoaPods](http://cocoapods.org). To inst
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "ZXAutoScrollView"
+pod 'ZXAutoScrollView'
 ```
 
 ## Author
