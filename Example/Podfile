@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZXAutoScrollView_Example' do
+  pod 'ZXAutoScrollView', :path => '../'
+
+  target 'ZXAutoScrollView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
