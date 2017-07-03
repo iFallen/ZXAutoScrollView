@@ -204,6 +204,9 @@ public  class ZXAutoScrollView: UIView {
         if newWindow == nil {
             dealloc = true
             self.stopTimer()
+        } else {
+            dealloc = false
+            self.checkAutoFlip()
         }
     }
 }
