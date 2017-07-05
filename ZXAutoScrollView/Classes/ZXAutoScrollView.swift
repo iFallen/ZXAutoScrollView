@@ -112,6 +112,7 @@ public  class ZXAutoScrollView: UIView {
         if dealloc {
             return
         }
+        self.stopTimer()
         if let dataSource = dataSource {
             self.totalPage = dataSource.numberofPages(self)
             self.pageControl.numberOfPages = self.totalPage
