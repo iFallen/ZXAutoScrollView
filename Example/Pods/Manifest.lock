@@ -1,5 +1,5 @@
 PODS:
-  - ZXAutoScrollView (1.0.0)
+  - ZXAutoScrollView (1.0.3)
 
 DEPENDENCIES:
   - ZXAutoScrollView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ZXAutoScrollView: fb07c6b539c30450c84e802c22f4578afe00bc4f
+  ZXAutoScrollView: d98ea3bb2b80e60800335fc345aadb06666377af
 
 PODFILE CHECKSUM: dfaab2ffefd11ac354b97900994c6468e9e71d4a
 
