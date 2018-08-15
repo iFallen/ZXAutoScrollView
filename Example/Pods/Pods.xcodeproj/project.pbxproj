@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17A91C1C7BA313A371437C56CD8A73A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		1C977B5D4A122ED7DB9D664DA3DB81D2 /* ZXAutoScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FDC6E31B3018022E2427FBD7FE83941 /* ZXAutoScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AB8E0A12123D1E50069DF51 /* Timer+HZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8E09B2123BC340069DF51 /* Timer+HZX.swift */; };
 		73EAD1BA81CA18674ABE3E2CA0C70CF6 /* Pods-ZXAutoScrollView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12BC173F089AA9751AF52A3D41A42313 /* Pods-ZXAutoScrollView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E994F9203578336F4FE3E10DAFD2E45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		90E07BB1147A57EF225A7FC8E9BE40F6 /* Pods-ZXAutoScrollView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B09202468E81F23108865ADBE98E90 /* Pods-ZXAutoScrollView_Tests-dummy.m */; };
@@ -35,21 +36,22 @@
 		0B11CA23AD66014FC9E0A2E61F38F771 /* Pods-ZXAutoScrollView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXAutoScrollView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		12BC173F089AA9751AF52A3D41A42313 /* Pods-ZXAutoScrollView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZXAutoScrollView_Example-umbrella.h"; sourceTree = "<group>"; };
 		1CD44029C5D5A703ACF01E832B1165DC /* Pods-ZXAutoScrollView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZXAutoScrollView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2A313D330CC58EA5B179AA4CE01B91C6 /* Pods_ZXAutoScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZXAutoScrollView_Tests.framework; path = "Pods-ZXAutoScrollView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A313D330CC58EA5B179AA4CE01B91C6 /* Pods_ZXAutoScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXAutoScrollView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E93DE9E82D778B704A34CE2DE4CD8E /* ZXAutoScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXAutoScrollView.xcconfig; sourceTree = "<group>"; };
 		360FDFC33F85BB5007BE2E2D175D3CDD /* Pods-ZXAutoScrollView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZXAutoScrollView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		423441BF9DE1B1C0FDA6A88133803EFF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4268EE85722F0AF179DD697F38CDBB9D /* ZXAutoScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZXAutoScrollView-dummy.m"; sourceTree = "<group>"; };
-		45504CE6BB1D5F35ECC672ABC925139E /* Pods-ZXAutoScrollView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZXAutoScrollView_Example.modulemap"; sourceTree = "<group>"; };
+		45504CE6BB1D5F35ECC672ABC925139E /* Pods-ZXAutoScrollView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZXAutoScrollView_Example.modulemap"; sourceTree = "<group>"; };
 		6302FBF45C15A7827BEE068C637D7D41 /* Pods-ZXAutoScrollView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZXAutoScrollView_Example-dummy.m"; sourceTree = "<group>"; };
-		6BCE004DF618DE059653F95CD8715DDB /* ZXAutoScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZXAutoScrollView.modulemap; sourceTree = "<group>"; };
+		6AB8E09B2123BC340069DF51 /* Timer+HZX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+HZX.swift"; sourceTree = "<group>"; };
+		6BCE004DF618DE059653F95CD8715DDB /* ZXAutoScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZXAutoScrollView.modulemap; sourceTree = "<group>"; };
 		6FDC6E31B3018022E2427FBD7FE83941 /* ZXAutoScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXAutoScrollView-umbrella.h"; sourceTree = "<group>"; };
 		72B09202468E81F23108865ADBE98E90 /* Pods-ZXAutoScrollView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZXAutoScrollView_Tests-dummy.m"; sourceTree = "<group>"; };
 		7C16E8A92F6F6F71F673207B0EAEF125 /* Pods-ZXAutoScrollView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZXAutoScrollView_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		7D0627A93139AC58262DB0481EF5A1E6 /* ZXAutoScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZXAutoScrollView.framework; path = ZXAutoScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0627A93139AC58262DB0481EF5A1E6 /* ZXAutoScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZXAutoScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3390A32BB913124D17704FCBC0E6AC /* Pods-ZXAutoScrollView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZXAutoScrollView_Example-resources.sh"; sourceTree = "<group>"; };
 		8EE3FE9B8A49A23DE7276CAAEF5DCC27 /* Pods-ZXAutoScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXAutoScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AC46B5A1628C808D8D33226BA37ECA1F /* Pods-ZXAutoScrollView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZXAutoScrollView_Tests-resources.sh"; sourceTree = "<group>"; };
 		AC7F7EF07CE0859E2DBCE6BA082A6562 /* Pods-ZXAutoScrollView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXAutoScrollView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -58,11 +60,11 @@
 		CF29B1FFFE3E7E54EE7856E15A22DB95 /* ZXAutoScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXAutoScrollView.swift; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DD00DA77B4CE1C8480FB091F9ED7F672 /* Pods-ZXAutoScrollView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZXAutoScrollView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E46AFD5A4EB5753BECF79FE45D3D7505 /* Pods-ZXAutoScrollView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZXAutoScrollView_Tests.modulemap"; sourceTree = "<group>"; };
+		E46AFD5A4EB5753BECF79FE45D3D7505 /* Pods-ZXAutoScrollView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZXAutoScrollView_Tests.modulemap"; sourceTree = "<group>"; };
 		E5F1BFF5B5FEB9C864B3046853A21ED9 /* ZXAutoScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXAutoScrollView-prefix.pch"; sourceTree = "<group>"; };
 		E71131794A789821C5D572B7527D584A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFA2321D5D9EE2D8C3510739EA0AED85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2693B46BB85D875EF88B73C69A5B651 /* Pods_ZXAutoScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZXAutoScrollView_Example.framework; path = "Pods-ZXAutoScrollView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2693B46BB85D875EF88B73C69A5B651 /* Pods_ZXAutoScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXAutoScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A53B31466B6E533284274AFD155930 /* Pods-ZXAutoScrollView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZXAutoScrollView_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,7 +126,6 @@
 			children = (
 				4032EF65F70231CA69EED93BFCE76716 /* Classes */,
 			);
-			name = ZXAutoScrollView;
 			path = ZXAutoScrollView;
 			sourceTree = "<group>";
 		};
@@ -142,8 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				CF29B1FFFE3E7E54EE7856E15A22DB95 /* ZXAutoScrollView.swift */,
+				6AB8E09B2123BC340069DF51 /* Timer+HZX.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -318,6 +319,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					2DB490DB665EF1AA7A0A6F78A2F2895E = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -345,6 +351,7 @@
 			files = (
 				BD85BC55A5EAA85D87F1571FEC863B43 /* ZXAutoScrollView-dummy.m in Sources */,
 				E7262874EC3ABD55E258747D62C3BE60 /* ZXAutoScrollView.swift in Sources */,
+				6AB8E0A12123D1E50069DF51 /* Timer+HZX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8EE3FE9B8A49A23DE7276CAAEF5DCC27 /* Pods-ZXAutoScrollView_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -582,6 +590,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C4AD3D03A2AB07008F124DA677EF55CF /* Pods-ZXAutoScrollView_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

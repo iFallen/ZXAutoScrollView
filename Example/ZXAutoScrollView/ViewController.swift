@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             colors.append(UIColor(red: r, green: g, blue: b, alpha: 1.0))
         }
 
-        self.zxAutoScrollView.flipInterval = 3 // Default 2
+        self.zxAutoScrollView.flipInterval = 1 // Default 2
         self.zxAutoScrollView.delegate = self
         self.zxAutoScrollView.dataSource = self
         
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         self.testB.dataSource = self
         self.testB.autoFlip = false //Default true, if pages less 1 false
         self.testB.backgroundColor = UIColor.gray
-        self.testB.center = CGPoint(x: UIScreen.main.bounds.width / 2.0, y: 120)
+        self.testB.center = CGPoint(x: UIScreen.main.bounds.width / 2.0, y: 170)
         self.view.addSubview(testB)
     }
     

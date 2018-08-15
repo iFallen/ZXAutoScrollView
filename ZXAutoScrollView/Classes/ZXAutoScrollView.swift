@@ -38,7 +38,6 @@ public  class ZXAutoScrollView: UIView {
     fileprivate var threeViews = [UIView]()
     fileprivate var flipTimer:Timer?
     fileprivate var scrollView:UIScrollView!
-    fileprivate var dealloc = false
     
     public var pageControl:UIPageControl!
     public var autoFlip = true {
@@ -101,17 +100,11 @@ public  class ZXAutoScrollView: UIView {
     }
     
     public func reloadData() {
-        if dealloc {
-            return
-        }
         currentPage = 0
         self.loadData()
     }
     
     fileprivate func loadData() {
-        if dealloc {
-            return
-        }
         self.stopTimer()
         if let dataSource = dataSource {
             self.totalPage = dataSource.numberofPages(self)
@@ -158,7 +151,10 @@ public  class ZXAutoScrollView: UIView {
         if totalPage > 1 {
             if autoFlip {
                 if flipTimer == nil {
-                    flipTimer = Timer.scheduledTimer(timeInterval: flipInterval, target: self, selector: #selector(autoFlipAction), userInfo: nil, repeats: true)
+                    flipTimer = Timer.hzx_scheduledTimer(timeInterval: flipInterval, repeats: true) { [weak self] (timer) in
+                        self?.autoFlipAction()
+                    }
+                    //flipTimer = Timer.scheduledTimer(timeInterval: flipInterval, target: self, selector: #selector(autoFlipAction), userInfo: nil, repeats: true)
                     RunLoop.current.add(flipTimer!, forMode: .commonModes)
                 } else {
                     flipTimer?.fireDate = Date()
@@ -198,16 +194,6 @@ public  class ZXAutoScrollView: UIView {
         if flipTimer != nil {
             flipTimer?.invalidate()
             flipTimer = nil
-        }
-    }
-    
-    override public func willMove(toWindow newWindow: UIWindow?) {
-        if newWindow == nil {
-            dealloc = true
-            self.stopTimer()
-        } else {
-            dealloc = false
-            self.checkAutoFlip()
         }
     }
 }
