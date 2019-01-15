@@ -46,8 +46,16 @@ iOS8 or Later
 ZXAutoScrollView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+- swift 4.x
+
 ```ruby
-pod 'ZXAutoScrollView'
+pod 'ZXAutoScrollView', '~> 2.0.0'
+```
+
+- swift 3.x
+
+```ruby
+pod 'ZXAutoScrollView', '~> 1.0.4'
 ```
 
 ## Author
