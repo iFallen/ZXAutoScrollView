@@ -155,7 +155,7 @@ public  class ZXAutoScrollView: UIView {
                         self?.autoFlipAction()
                     }
                     //flipTimer = Timer.scheduledTimer(timeInterval: flipInterval, target: self, selector: #selector(autoFlipAction), userInfo: nil, repeats: true)
-                    RunLoop.current.add(flipTimer!, forMode: .commonModes)
+                    RunLoop.current.add(flipTimer!, forMode: RunLoop.Mode.common)
                 } else {
                     flipTimer?.fireDate = Date()
                 }
@@ -165,7 +165,7 @@ public  class ZXAutoScrollView: UIView {
         }
     }
     
-    func tapGestureAction() {
+    @objc func tapGestureAction() {
         delegate?.zxAutoScrolView(self, selectAt: currentPage)
     }
     

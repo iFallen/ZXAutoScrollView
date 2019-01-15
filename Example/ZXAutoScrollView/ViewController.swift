@@ -56,6 +56,9 @@ class ViewController: UIViewController {
         self.testB.reloadData()
     }
     
+    deinit {
+        print("ViewController deinit")
+    }
 }
 
 
