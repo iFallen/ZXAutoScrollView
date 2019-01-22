@@ -16,11 +16,13 @@ public protocol ZXAutoScrollViewDataSource : class {
 
 @objc
 public protocol ZXAutoScrollViewDelegate : class {
-    func zxAutoScrolView(_ scrollView:ZXAutoScrollView,selectAt index:Int)
+    func zxAutoScrollView(_ scrollView: ZXAutoScrollView,selectAt index:Int)
+    func zxAutoScrollView(_ scrollView: ZXAutoScrollView, scrollTo index: Int)
 }
 
 extension ZXAutoScrollViewDelegate {
-    func zxAutoScrolView(_ scrollView:ZXAutoScrollView,selectAt index:Int){}
+    func zxAutoScrollView(_ scrollView: ZXAutoScrollView,selectAt index:Int) {}
+    func zxAutoScrollView(_ scrollView: ZXAutoScrollView, scrollTo index: Int) {}
 }
 
 
@@ -34,11 +36,18 @@ public  class ZXAutoScrollView: UIView {
     }
     
     fileprivate var totalPage = 0
-    fileprivate var currentPage = 0
+    fileprivate var currentPage = 0 {
+        didSet {
+            if oldValue != currentPage {
+                delegate?.zxAutoScrollView(self, scrollTo: currentPage)
+            }
+        }
+    }
     fileprivate var threeViews = [UIView]()
     fileprivate var flipTimer:Timer?
     fileprivate var scrollView:UIScrollView!
     
+    public var showPageControl: Bool = true
     public var pageControl:UIPageControl!
     public var autoFlip = true {
         didSet {
@@ -137,10 +146,15 @@ public  class ZXAutoScrollView: UIView {
                 self.refreshContentSize()
                 if totalPage > 1 {
                     self.scrollView.isScrollEnabled = true
-                    pageControl.isHidden = false
+                    if showPageControl {
+                        pageControl.isHidden = false
+                    } else {
+                        pageControl.isHidden = true
+                    }
                 } else {
                     self.scrollView.isScrollEnabled = false
                     pageControl.isHidden = true
+
                 }
             }
         }
@@ -166,7 +180,7 @@ public  class ZXAutoScrollView: UIView {
     }
     
     @objc func tapGestureAction() {
-        delegate?.zxAutoScrolView(self, selectAt: currentPage)
+        delegate?.zxAutoScrollView(self, selectAt: currentPage)
     }
     
     func autoFlipAction() {
@@ -209,6 +223,7 @@ extension ZXAutoScrollView : UIScrollViewDelegate {
                 currentPage = (currentPage - 1 + totalPage ) % totalPage
                 self.loadData()
             }
+            
             //resume timer
             self.resumeTimer()
         }

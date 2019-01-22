@@ -88,7 +88,7 @@ extension ViewController: ZXAutoScrollViewDataSource {
 }
 
 extension ViewController:ZXAutoScrollViewDelegate {
-    func zxAutoScrolView(_ scrollView: ZXAutoScrollView, selectAt index: Int) {
+    func zxAutoScrollView(_ scrollView: ZXAutoScrollView, selectAt index: Int) {
         var text = "PageA"
         if scrollView == zxAutoScrollView {
             text = "PageB"
@@ -96,6 +96,9 @@ extension ViewController:ZXAutoScrollViewDelegate {
         let alert = UIAlertController(title: "Tips", message: "\(text),Index:(\(index + 1))", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
+    }
+    func zxAutoScrollView(_ scrollView: ZXAutoScrollView, scrollTo index: Int) {
+        print("scroll to index: \(index)" )
     }
 }
 

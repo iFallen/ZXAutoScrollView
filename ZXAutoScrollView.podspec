@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ZXAutoScrollView'
-  s.version          = '2.0.0'
+  s.version          = '2.0.1'
   s.summary          = 'ZXAutoScrollView.Delegate/DataSource'
   s.description      = <<-DESC
 TODO: ZXAutoScrollView.Delegate/DataSource.
